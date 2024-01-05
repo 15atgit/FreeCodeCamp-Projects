@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey</title>
+    </head>
+    <body>
+        <h1>Student Survey</h1>
+        <p>To survey about job and entrepreneuship</p>
+        <div class="main">
+            <form>
+                <div>
+                    <label>Name:</label>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div>
+                <label>Email:</label>
+                <input type="email" placeholder="Your Email">
+                </div>
+                <label for="number">Number:</label>
+                <input type="number" placeholder="Your Number" min="100000" max="10000000" name="number" class="number">
+                <div class="select">
+                    <label for="path">Path:</label>
+                    <select name="path" id="path">
+                        <option value="Job">Job</option>
+                        <option value="Startup">Startups</option>
+                    </select>
+                </div>
+                <div class="ch">
+                    <label for="radio">While:</label>
+                    <div class="option"><input type="radio" id="radio"><label for="radio">Learning</label></div>
+                    <div class="division"></div>
+                    <div class="option"><input type="radio" id="radio"><label for="radio">Earning</label></div>
+                </div>
+                <div class="division"></div>
+                <div class="rad">
+                    <label for="checkbox" class="rad">For:</label>
+                    <div class="division"></div>
+                    <div class="option"><input type="checkbox" id="checkbox1"><label for="checkbox1">Experience</label></div>
+                    <div class="option"><input type="checkbox" id="checkbox2"><label for="checkbox2">Money</label></div>
+                </div>
+                <br>
+                <label for="addon">Additional Interests: </label>
+                <textarea id="addon" placeholder="Additional interests"></textarea>
+                <br>
+                <div class="submit"><button type="submit" class="submit">submit</button></div>
+            </form>
+        </div>
+    </body>
+</html>
